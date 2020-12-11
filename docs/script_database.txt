@@ -1,0 +1,12 @@
+Create Database loginInseguro;
+
+USE loginInseguro;
+
+Create Table usuarios
+(id Int Not Null Auto_Increment,
+login Varchar(100) Not Null,
+email Varchar(100),
+senha Varchar(100) Not Null,
+dataCadastro DateTime Default (CURTIME()),
+avatar Varchar(100),
+Constraint PK_usuario_id Primary Key (id));
